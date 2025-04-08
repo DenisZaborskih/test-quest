@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./components/button/Button";
+import Header from "./components/Header/Header";
+import Input from "./components/input/Input";
 
-function App() {
+function App (){
+  const handleButtonClick = () => {
+    console.log()
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main-area">
+      <Header />
+      <Input placeholder="Введите текст..."/>
+      <Button />
+    </main>
   );
 }
 
