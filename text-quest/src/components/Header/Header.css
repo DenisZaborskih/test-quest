@@ -1,0 +1,13 @@
+.custom-header{
+    display: grid;
+    justify-items: center;
+    background-color: aqua;
+    box-shadow: 0px 10px 20px darkcyan;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.custom-header__head-1{
+    color: darkcyan;
+}

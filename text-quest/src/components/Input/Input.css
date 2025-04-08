@@ -1,0 +1,27 @@
+.custom-label{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 24px;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 24px;
+    align-items: center;
+    color: darkcyan;
+    font-weight: 600;
+}
+
+.custom-input{
+    height: 35%;
+    font-size: 18px;
+    background-color: aliceblue;
+    border: solid 2px darkcyan;
+    border-radius: 5px;
+    padding-left: 3%;
+}
+
+.custom-input:focus{
+    border: solid 2px darkcyan;
+    outline: none;
+    background-color: rgba(0, 255, 255, 0.1);
+    padding-left: 3%;
+}

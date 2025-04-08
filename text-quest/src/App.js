@@ -2,23 +2,26 @@ import { useState } from "react";
 import Button from "./components/Button/Button";
 import Header from "./components/Header/Header";
 import Input from "./components/Input/Input";
+import "./App.css";
 
-function App (){
-  const [value, setValue] = useState('');
+function App() {
+  const [value, setValue] = useState("");
 
   const handleButtonClick = () => {
-    console.log(value);
-  }
+    if (value !== '') console.log(value);
+  };
 
   const handleInput = (e) => {
     setValue(e);
-  }
+  };
 
   return (
     <main className="main-area">
       <Header />
-      <Input placeholder="Введите текст..." onChange={handleInput}/>
-      <Button children={'Нажать!'} onClick={handleButtonClick}/>
+      <div className="main-area__input-area">
+        <Input placeholder="Введите текст..." onChange={handleInput} />
+        <Button onClick={handleButtonClick} />
+      </div>
     </main>
   );
 }
