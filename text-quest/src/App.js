@@ -1,6 +1,6 @@
-import Button from "./components/button/Button";
+import Button from "./components/Button/Button";
 import Header from "./components/Header/Header";
-import Input from "./components/input/Input";
+import Input from "./components/Input/Input";
 
 function App (){
   const handleButtonClick = () => {
