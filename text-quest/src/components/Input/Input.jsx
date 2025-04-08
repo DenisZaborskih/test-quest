@@ -10,14 +10,17 @@ const Input = ({ placeholder, onChange }) => {
     }
 
     return (
-        <inpit
-            type='text'
-            value={value}
-            onChange={handleChange}
-            placeholder={placeholder}
-            className='custom-input'
+        <label className="custom-label">
+            Сообщение
+            <input
+                type='text'
+                value={value}
+                onChange={handleChange}
+                placeholder={placeholder}
+                className='custom-input'
             
-        />
+            />
+        </label>
     );
 }
 export default Input;
