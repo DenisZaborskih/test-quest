@@ -1,0 +1,6 @@
+.main-area__input-area{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    gap: 32px;
+    justify-items: center;
+}
