@@ -8,7 +8,10 @@ function App() {
   const [value, setValue] = useState("");
 
   const handleButtonClick = () => {
-    if (value !== '') console.log(value);
+    if (value.length >= 3) {
+      console.log(value);
+      setValue('');
+    }
   };
 
   const handleInput = (e) => {
